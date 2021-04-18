@@ -51,14 +51,14 @@
         </h1>
         <div class="row text-center">
                 <a class="github-button"
-                href="https://github.com/ilyas-it83/CloudComparer/edit/master/data/Services.json"
+                href="https://github.com/ClouDevops101/CloudComparer/edit/master/data/Services.json"
                 data-size="large" data-show-count="true">Edit this page on Github</a>
-                <a class="github-button" href="https://github.com/ilyas-it83/CloudComparer" data-size="large" data-show-count="true" aria-label="Star ilyas-it83/CloudComparer on GitHub">Star</a>
-                <a class="github-button" href="https://github.com/ilyas-it83" data-size="large" data-show-count="true" aria-label="Follow @ilyas-it83 on GitHub">Follow @ilyas-it83</a>
+                <a class="github-button" href="https://github.com/ClouDevops101/CloudComparer" data-size="large" data-show-count="true" aria-label="Star ClouDevops101/CloudComparer on GitHub">Star</a>
+                <a class="github-button" href="https://github.com/ClouDevops101" data-size="large" data-show-count="true" aria-label="Follow @ClouDevops101 on GitHub">Follow @ClouDevops101</a>
                 <a class="github-button"
-                href="https://github.com/ilyas-it83/CloudComparer/fork" data-size="large" data-show-count="true" aria-label="Fork
-                ilyas-it83/CloudComparer on GitHub">Fork</a>
-                <a class="github-button" href="https://github.com/ilyas-it83/CloudComparer/issues" data-icon="octicon-issue-opened" aria-label="Issue ilyas-it83/CloudComparer on GitHub">Issue</a>
+                href="https://github.com/ClouDevops101/CloudComparer/fork" data-size="large" data-show-count="true" aria-label="Fork
+                ClouDevops101/CloudComparer on GitHub">Fork</a>
+                <a class="github-button" href="https://github.com/ClouDevops101/CloudComparer/issues" data-icon="octicon-issue-opened" aria-label="Issue ClouDevops101/CloudComparer on GitHub">Issue</a>
           </div>
 
         
@@ -68,13 +68,14 @@
             <th style="width:7%">Category</th>
             <th style="width:10%">Service</th>
             <th>
-              <img class="img-responsive img-header" src="img/logo/aws.svg" alt="AWS Icon" />
+              
+              <img class="img-responsive img-header" src="img/logo/google.svg" alt="Google Cloud Platform Logo" />
             </th>
             <th>
               <img class="img-responsive img-header" src="img/logo/msazure.svg" alt="Microsoft Azure Log"/>
             </th>
             <th>
-              <img class="img-responsive img-header" src="img/logo/google.svg" alt="Google Cloud Platform Logo" />
+              <img class="img-responsive img-header" src="img/logo/aws.svg" alt="AWS Icon" />
             </th>
             <th>
               <img class="img-responsive img-header" src="img/logo/IBM-Cloud-svg-lockup-color8.svg"  alt="IBM Cloud Logo" />
@@ -104,17 +105,19 @@
 
                 <td>
                     <ul>
-                        {{#each aws}}
-                            <li>
-                                {{#if name}}
-                                <img src="img/cloudproviders/aws/{{icon}}" alt="{{name}}" onerror="this.remove()"  class=" hidden-sm hidden-xs img-responsive img-icons" /> {{name}}
-                                {{/if}}
-                                {{#if ref}}
-                                <a href="{{ref}}" class="glyphicon glyphicon-link srvc-hyperlink hidden-print" target="_blank"></a>
-                                {{/if}}
-                            </li>                           
+                        {{#each google}}
+                        <li>
+                            {{#if name}}
+                            <img src="img/cloudproviders/gcp/{{icon}}" alt="{{name}}" onerror="this.remove()" class=" hidden-sm hidden-xs img-responsive img-icons" />{{name}}
+                            {{/if}}
+                            {{#if ref}}
+                            <a href="{{ref}}" class="glyphicon glyphicon-link srvc-hyperlink hidden-print" target="_blank"></a>                        
+                            {{/if}}
+                        </li>
+
                         {{/each}}
                     </ul>
+                    
                 </td>
 
                 <td>
@@ -134,16 +137,15 @@
 
                 <td>
                     <ul>
-                        {{#each google}}
-                        <li>
-                            {{#if name}}
-                            <img src="img/cloudproviders/gcp/{{icon}}" alt="{{name}}" onerror="this.remove()" class=" hidden-sm hidden-xs img-responsive img-icons" />{{name}}
-                            {{/if}}
-                            {{#if ref}}
-                            <a href="{{ref}}" class="glyphicon glyphicon-link srvc-hyperlink hidden-print" target="_blank"></a>                        
-                            {{/if}}
-                        </li>
-
+                        {{#each aws}}
+                            <li>
+                                {{#if name}}
+                                <img src="img/cloudproviders/aws/{{icon}}" alt="{{name}}" onerror="this.remove()"  class=" hidden-sm hidden-xs img-responsive img-icons" /> {{name}}
+                                {{/if}}
+                                {{#if ref}}
+                                <a href="{{ref}}" class="glyphicon glyphicon-link srvc-hyperlink hidden-print" target="_blank"></a>
+                                {{/if}}
+                            </li>                           
                         {{/each}}
                     </ul>
                 </td>
@@ -222,9 +224,9 @@
         </table>
     </section> -->
 
-    <!-- Disqus Comments -->
+    <!-- Disqus Copyright (c) ClouDevOps Inc by ABDELILAH HEDDAR. -->
     <section id="portfolio" class="portfolio container hidden-print">
-        <h2 class="text-center">Comments</h2>
+        <h2 class="text-center">Copyright (c) ClouDevOps Inc by ABDELILAH HEDDAR.</h2>
         <hr class="small">
         <div id="disqus_thread"></div>
     </section>
@@ -243,7 +245,7 @@
                     <li>“None” mentioned against certain services is based on unavailability of certain direct mapping services between cloud providers</li>
                     <li>Strictly No Personal or Employer opinions expressed in this presentation</li>
                     <li>All the definition & benefits of services mentioned in this presentation are sourced from the respective cloud providers websites and documentations.</li>
-                    <li>For any queries or issues, please raise an issue <a href="https://github.com/ilyas-it83/CloudComparer/issues/">here</a></li>
+                    <li>For any queries or issues, please raise an issue <a href="https://github.com/ClouDevops101/CloudComparer/issues/">here</a></li>
                     <li>Listing doesn't include third party services offered through cloud market places.</li>
                 </ul>
             </div>
@@ -251,7 +253,7 @@
     </section>
 
     <span id="forkongithub">
-        <a href="https://github.com/ilyas-it83/CloudComparer/">Fork me on GitHub</a>
+        <a href="https://github.com/ClouDevops101/CloudComparer">Fork me on GitHub</a>
     </span>
 
     <!-- Footer Containing Contact Details -->
@@ -260,37 +262,37 @@
             <div class="row text-center">
                 <h4>
                     <strong>The Ultimate Cloud Comparison by
-                        <a href="https://github.com/ilyas-it83/CloudComparer/">Ilyas</a>
+                        <a href="https://github.com/ClouDevops101/CloudComparer">ClouDevOps</a>
                     </strong>
                 </h4>
                 <ul class="list-unstyled">
                     <li>
-                        <i class="fa fa-phone fa-fw"></i> +91-9894692648</li>
+                        <i class="fa fa-phone fa-fw"></i> +(33) 1 57 68 48 24</li>
                     <li>
                         <i class="fa fa-envelope-o fa-fw"></i>
-                        <a href="mailto:ilyas@bornoncloud.com">ilyas@bornoncloud.com</a>
+                        <a href="https://www.linkedin.com/signup/public-profile-join?vieweeVanityName=kaaw&trk=public_profile_top-card-primary-button-join-to-connect"></a>
                     </li>
                 </ul>
                 <br>
                 <ul class="list-inline">
                     <li>
-                        <a href="https://www.facebook.com/IlyasTheWebizen">
-                            <i class="fa fa-facebook fa-fw fa-3x"></i>
+                        <a href="https://bit.ly/CLDEVYT">
+                            <i class="fa fa-youtube fa-fw fa-3x"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/Ilyas_tweets">
+                        <a href="https://bit.ly/CLDE101">
                             <i class="fa fa-twitter fa-fw fa-3x"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://in.linkedin.com/in/ilyasf">
+                        <a href="https://bit.ly/aheddar">
                             <i class="fa fa-linkedin fa-fw fa-3x"></i>
                         </a>
                     </li>
                 </ul>
                 <hr class="small">
-                <p class="text-muted">Copyright &copy; BornOnCloud 2014</p>
+                <p class="text-muted">Copyright &copy; ClouDevOps 2021</p>
             </div>
         </div>
         <a id="to-top" href="#top" class="btn btn-dark btn-lg">
@@ -362,32 +364,10 @@
         });
     </script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-    <!-- Disqus / Google Analytics / Addthis -->
-    <script>
-        (function () {
-            var d = document, s = d.createElement('script');
-            s.src = '//cloudcomparer.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-    </script>
     <noscript>Please enable JavaScript to view the
         <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
     </noscript>
     <script id="dsq-count-scr" src="//cloudcomparer.disqus.com/count.js" async></script>
-    <script>
-        // Google Analytics
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-7073232-9', 'auto');
-        ga('send', 'pageview');
-    </script>
     <script id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/395033b8ac8c5c15d3e72e1e6/8625e22d7477419a5c1f1af5b.js");</script>
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552c144e4f497fe9"></script>
 </body>

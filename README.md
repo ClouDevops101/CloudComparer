@@ -24,3 +24,5 @@ See also the list of [contributors](https://github.com/ilyas-it83/CloudComparer/
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
+
+docker scan gcr.io/crucial-robot-309000/donation:1.3 

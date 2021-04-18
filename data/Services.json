@@ -327,6 +327,11 @@
                 "name": "Kubernetes Engine",
                 "ref": "https://cloud.google.com/kubernetes-engine/",
                 "icon": "Container-Engine.png"
+            },
+            {
+                "name": "Cloud Run",
+                "ref": "https://cloud.google.com/run/",
+                "icon": "Cloud-run.png"
             }
         ],
         "ibm": [
